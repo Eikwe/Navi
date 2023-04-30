@@ -1,0 +1,232 @@
+ img{ width: 100%;
+    height: auto;} 
+    
+    h1, h2 {    
+        text-align: center;
+        font-size: 3vw;
+    }
+
+    ul {   
+        box-shadow: 0px 2px 6px;
+        background-color: #bdecb6; 
+    }
+    
+    body {
+        margin-left: 25px;
+        margin-right: 25px;
+        font-size: 28px;
+        font-family: Georgia;
+        
+    }
+    
+
+    ul{
+        text-align: center;
+        
+    }
+    nav li {
+        
+        display: inline-block;
+        font-size: 3vw;
+        margin: 0 1vw;
+    }
+    nav ul li{
+        position: relative;
+    }
+    nav ul li a {
+        display: block;
+       
+    }
+    nav ul li ul{
+        display: none;
+        position: absolute;
+        background-color:rgb(143, 241, 195);
+    }
+    nav ul li:hover ul {
+        display: block;
+        z-index: 1;
+       
+    }
+  
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    nav a:hover {    
+    text-decoration: underline;
+    background-color: white;
+    color: black;
+    }
+   
+  
+    .icons a:hover {
+        transform: scale(125%);
+       }
+
+    
+    .Spenden {
+        background-image: url("Titelbild.jpg");
+        background-size: cover;
+        background-position: top;
+        padding: 170px;
+      
+    }    
+    .textposition {
+    text-align: left;
+    margin-left: -15%;
+    margin-top: -17%;
+    
+    }
+   
+    .Button {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 2% 7%;
+    cursor: pointer;
+    border-radius: 1em;
+    margin-left: 30px;
+    border-color: green;
+   
+    
+    }
+    
+    .button:hover {
+    background-color: rgb(63, 236, 63) }
+
+
+
+
+    .containerdrei {
+        display: flex;
+        width: 30%;
+        text-align: center;
+        
+        
+    }
+
+    .zweiercontainer {
+        display: flex;
+        width: 45%;
+        justify-content: space-between;
+        align-items: center;        
+    }
+    .bild1, .bild2 {
+        padding: 5%; 
+        background-color: rgb(223, 200, 185);
+    }
+
+.background {
+    background-color: #FFDDDD;
+    padding: 3%;
+   
+}
+
+.bildundtext {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bildlinks {
+    width: 70%;
+    margin-right: 5%;
+
+}
+.bildrechts {
+    width: 70%;
+    margin-left: 5%;
+
+}
+
+
+.footer {
+    background-color:rgb(78, 40, 40);
+    display: flex;
+    justify-content: space-between;
+}
+    .links a {
+        color: white;
+        font-size: 130%;
+    }
+    .links {
+        margin: 3% 0 0 2%;
+    }
+
+   footer a {
+    width: 40%;
+   }
+
+
+.icons {
+    display:flex;
+    justify-content: space-between;
+    padding: 4vw;
+    text-align: center;
+   
+} 
+.icons img {
+    width: 25vw;
+}
+
+.unsereprojekte {
+    background-color: rgb(105, 202, 226);
+}
+
+.icons a {
+    color: white;
+    font-size: 2.5vw;
+}
+    @media only screen and (min-width:1100px) {
+/*die nächsten zwei gehören zum Sonderfall*/
+    .bild-sonderfall {
+            width: 60%;
+            margin-right: 5%;
+        }
+    .textbild {
+     display: flex;
+    justify-content: space-between; 
+    align-items: center;
+           }
+
+.bildlinks {
+    width: 70%;
+    margin-right: 5%;
+}
+  
+.icons img {
+    width: 20vw;
+}      
+
+
+
+
+.Spenden {
+    padding: 250px;
+    
+}    
+
+
+.PositionSpende {
+margin-left: -180px;
+
+}
+
+
+/* passt so */
+nav li {
+    font-size: 2vw; 
+    margin: 0 2vw;}
+
+}
+body { 
+    margin-left: 3%;
+    margin-right: 3%;
+    
+}
+   
+@media only screen and (min-width: 1200px) {
+    body { 
+        margin-left: 10%;
+        margin-right: 10%;
+        
+    }}
