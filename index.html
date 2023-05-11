@@ -18,84 +18,53 @@
     
        
     
-        <style>
-            
-        
-        #slider {
-        overflow: hidden;
-        }
-    
-    #slider figure  {
-        position: relative;
-        width: 700%;
-        margin: 0;
-        left: 0;
-        animation: 25s slider infinite;}
-    
-    #slider figure img {
-        width: 14.2857%;
-        float: left; }
-    
-    
-    
-    @keyframes slider {
-        0% {left: 0;}
-        11% {left: 0;}
-        16% {left: -100%;}
-        28% {left: -100%;}
-        33% {left: -200%; }
-        50% {left: -200%; }
-        55% {left: -300%; }
-        61% {left: -300%;}
-        66% {left: -400%;}
-        78% {left: -400%;}
-        83% {left: -500%;}
-        95% {left: -500%;}
-        100% {left: -600%;}
-      }
-    
-    
-        
-        </style>
+ 
     
     </head>
     <body> <div class="titelcontainer"  > 
-     <h2 style="font-size: 2vw;"> Eikwe-Schweinfurt</h2>
+     <center> <h3> Eikwe-Schweinfurt</h3></center>
     
-        
-            <nav>
-                <ul>
-                    <li><a href="index.html"> Start </a></li>
-                    <li><a href="projekte.html"> Projekte </a>
-                        <ul> <li><a href="Solarprojekt.html"> Solarprojekt </a></li> 
-                          <li><a href="kunstprojekt.html"> Kunstprojekt </a></li>  
-                        </ul>
-                      </li> 
+    
+<nav>
+  <ul>
+    <li><a href="index.html"> Start </a></li>
+    <li><a href="projekte.html"> Projekte </a>
+    <ul> <li><a href="Solarprojekt.html"> Solarprojekt </a></li> 
+    <li><a href="kunstprojekt.html"> Kunstprojekt </a></li>  </ul></li> 
+    <li><a href="aktuelles.html"> Aktuelles </a>
+    <ul> <li><a href="kabelsammlung.html"> Kabelsammlung </a></li>
+  <li><a href="kunstausstellung.html"> Kunstausstellung </a></li></ul> </li>
                     <li><a href="Partnerschaft.html">Partnerschaft </a></li> 
-                    <li><a href="aktuelles.html"> Aktuelles </a>
-                      <ul> <li><a href="kabelsammlung.html"> Kabelsammlung </a></li>
-                           <li><a href="kunstausstellung.html"> Kunstausstellung </a></li></ul> </li>
-                   
-                <li><a href="englisch.html"> <img class="englisch" src="englisch.png"></a></li>
+                           <li><a href="englisch.html"> <img class="englisch" src="englisch.png"></a></li>
+              
                       </ul>
              </nav>
    
        </div>
        
         <br>
-        <div id="slider">
-            <figure>
-                <img src="Titelbild.jpg">
-                <img src="Schaukasten.jpg">
-                <img src="GesamtbildIndex.jpg">
-                <img src="Solar.jpg">
-                <img src="Ubuntu.jpg">
-                <img src="Advent.jpeg">
-                <img src="Titelbild.jpg">
-              
-                
-            </figure> 
-        </div>
+             
+      <div id="slider">
+  <figure>
+    <img src="Titelbild.jpg">
+    <img src="Schaukasten.jpg">
+    <img src="GesamtbildIndex.jpg">
+    <img src="Solar.jpg">
+    <img src="Ubuntu.jpg">
+    <img src="Advent.jpeg">
+    <img src="Titelbild.jpg">
+  </figure>
+  <div id="slider-nav">
+    <div id="prev-slide">&lt;</div>
+    <div id="next-slide">&gt;</div>
+  </div>
+</div>
+
+
+
+ <script src="index.js"></script>
+
+
     
     <br>
       <h2> <b> Herzlich Willkommen!</b> </h2>
@@ -111,7 +80,7 @@
     Gerne können Sie am <b> 13. Mai von 10- 15 Uhr </b> Ihre kaputten Kabel auf dem <b>Schweinfurter Marktplatz </b> abgeben. <br>
     Diese Aktion findet im Rahmen der "Zukunftswoche Mainfranken" statt.
      <br> </div>  </p>
-    <center>  <a href="Solarprojekt.html"> <button class="Button" style="background-color:rgb(110, 208, 247);"> <b> Infos zum Solarprojekt </b>  </button></a> </center>
+    <center>  <a href="Solarprojekt.html"> <button class="Button" style="background-color:  rgb(219, 153, 153)"> <b> Infos zum Solarprojekt </b>  </button></a> </center>
   <center> <div class="zweiercontainer" style="margin-top: 3%; width:100%;"> 
     <a href="https://zukunftswoche-mainfranken.de" target="_blank">  <button class="Button"> Zukunftswoche Mainfranken - Website  </button>  </a> 
   <a href="FlyerZukunft.pdf" target="_blank"> <button class="Button"> Zukunftswoche Mainfranken Flyer </button> </a> <br> <br> </div> 
@@ -130,7 +99,7 @@
       </div>
     <hr> 
     
-<footer class="footer"> 
+<footer> 
       <div class="links"> <a  href="kontakt.html"> Kontakt </a> <br>
       <a  href="Impressum.html">Impressum</a></div>
       <a href="index.html"> <img src="LogoRathenau.jpg">

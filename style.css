@@ -1,9 +1,8 @@
- img{ width: 100%;
+img{ width: 100%;
     height: auto;} 
     
     h1, h2 {    
         text-align: center;
-        font-size: 3vw;
     }
 
     ul {   
@@ -13,82 +12,67 @@
     }
     
     body {
-        margin-left: 25px;
-        margin-right: 25px;
-        font-size: 32px;
+        margin-left: 3%;
+        margin-right: 3%;
+        font-size: 2.5vw;
         font-family: Georgia;
-        
     }
-    
-   
     ul{
-        text-align: center;
-        
+        text-align: center;  
     }
-    
-    nav li {
-        
+    nav li{
+        font-size: 2vh;
+        margin: 0 1.8vw 0 0; 
         display: inline-block;
-        font-size: 120%;
-        margin: 0 1.8vw 0 0;
         
     }
- 
+  
+    .englisch {
+        height: 1.7vh;
+        width: auto;}
     nav ul li{
         position: relative;
        
     }
     nav ul li a {
-        display: block;
-
-      
+        display: block;  
     }
    
     nav ul li ul{
         display: none;
         position: absolute;
         background-color:rgb(143, 241, 195);
-        font-size: 70%;
+        
        
     }
 
     nav ul li:hover ul {
         display: block;
         z-index: 1;
-       
     }
-    
+    nav ul li ul li {
+        white-space: nowrap;}
     a {
         text-decoration: none;
         color: black;
     }
-    nav a:hover {    
-    text-decoration: underline;
-    background-color: white;
-    color: black;
+nav a:hover {    
+ text-decoration: underline;
+ background-color: white;
+ color: black;
     }
-   
-    .englisch {
-        height: 4vw;
-    }
-    .icons a:hover {
-        transform: scale(125%);
-       }
 
-    
-    .Spenden {
-        background-image: url("Titelbild.jpg");
-        background-size: cover;
-        background-position: top;
-        padding: 170px;
-      
-    }    
-    .textposition {
-    text-align: left;
-    margin-left: -15%;
-    margin-top: -17%;
-    
-    }
+.icons a:hover {
+ transform: scale(125%);}
+ .Spenden {
+   background-image: url("Titelbild.jpg");
+   background-size: cover;
+   background-position: top;
+   padding: 170px;}    
+.textposition {
+  text-align: left;
+  margin-left: -15%;
+  margin-top: -17%;}
    
     .Button {
     font-size: 30px;
@@ -100,35 +84,25 @@
     border-color: green;
     }
     .newsbutton {
-        font-size: 3vw;
+        font-size: 3vw ;
         font-weight: bold;
-        padding: 7% 7%;
+        padding: 9% 9%;
         cursor: pointer;
-        
-        margin-left: 30px;
-    
-       
-    
+        background-color: #e09c9c;
+        color: white;
+        border-color:  white;
     }
+
     
     .button:hover {
     background-color: rgb(63, 236, 63) }
 
-    .newsbutton:hover{
-        background-color:rgb(247, 199, 242)
-    }
-
-
-
-
     .containerdrei {
         display: flex;
         width: 30%;
-        text-align: center;
-        
-        
+        text-align: center; 
     }
-
+ 
     .zweiercontainer {
         display: flex;
         width: 45%;
@@ -145,13 +119,17 @@
     padding: 3%;
    
 }
+.backgroundgreen {
+    background-color: #afe0c9;
+    padding: 3%;
+   
+}
 
 .bildundtext {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
 .bildlinks {
     width: 70%;
     margin-right: 5%;
@@ -164,7 +142,7 @@
 }
 
 
-.footer {
+footer {
     background-color:rgb(78, 40, 40);
     display: flex;
     justify-content: space-between;
@@ -201,17 +179,86 @@
     color: white;
     font-size: 2.5vw;
 }
-    @media only screen and (min-width:1100px) {
-/*die nächsten zwei gehören zum Sonderfall*/
+
+#slider {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  #slider figure {
+    position: relative;
+    width: 700%;
+    margin: 0;
+    left: 0;
+    animation: slider 40s infinite;
+  }
+  
+  
+  
+  #slider figure img {
+    width: 14.2857%;
+    float: left;
+  }
+  
+  #slider-nav {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    right: 10px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+  }
+  
+  #prev-slide,
+  #next-slide {
+    width: 30px;
+    height: 30px;
+    background-color: gray;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  #prev-slide:hover,
+  #next-slide:hover {
+    background-color: darkgray;
+  }
+  
+
+
+
+
+    @media only screen and (min-width:1050px) {
+/*die nächste gehört zum Sonderfall*/
 
 .titelcontainer {
     display: flex;
     justify-content: space-between;
     align-items: center;        
 }
+nav li{
+    font-size: 4vh;
+    margin: 0 0.8vw 0 0; 
+    
+}
+
+.englisch {
+    height: 4vh;
+    width: auto;}
+
+body{
+font-size: 1.6vw;}
+
     .bild-sonderfall {
-            width: 60%;
+            width: 58%;
             margin-right: 5%;
+            
         }
     .textbild {
      display: flex;
@@ -228,7 +275,7 @@
     width: 20vw;
 }      
 
-
+  
 
 
 .Spenden {
@@ -243,25 +290,33 @@ margin-left: -180px;
 }
 
 
-body { 
-    margin-left: 3%;
-    margin-right: 3%;
-    
-}
+
   
     nav li {
      
-        margin: 0 2vw;}
-    
-}
-@media only screen and (min-width: 1300px) {
-    body { 
-        margin-left: 10%;
-        margin-right: 10%;
+        margin: 0 1.8vw 0 0;}
+     
      
         
     }
-.englisch {
-    height: 2vw;
+  
+
+
+@media only screen and (min-width: 1300px) {
+    body { 
+        margin-left: 10%;
+        margin-right: 10%;      
+    }
+    .englisch {
+        height: 3.4vh;
+        width: auto;
+    }
+    nav li{
+        font-size: 4vh;
+        margin: 0 1.8vw 0 0; 
+        
+    }
+
+
 }
-}
+
