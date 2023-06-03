@@ -1,69 +1,84 @@
 img{ width: 100%;
     height: auto;} 
     
-    h1, h2 {    
-        text-align: center;
-    }
-
-    ul {   
-        box-shadow: 0px 2px 6px;
-        background-color: #bdecb6; 
-        
+h1, h2, h3 {    
+    text-align: center;
+    
+}
+h1, h2 {
+    margin-top: -1vw;
+}
+ 
+body {
+    margin: 0 3%;
+    font-size: 2.1vw;
+    font-family: Georgia;
+    scroll-behavior: smooth; /* für Animation*/
+ 
     }
     
-    body {
-        margin-left: 3%;
-        margin-right: 3%;
-        font-size: 2.5vw;
-        font-family: Georgia;
+ul {   
+    box-shadow: 0px 2px 6px;
+    background-color: #bdecb6;  
+}
+nav ul li{
+    position: relative;   
+}
+nav ul li a {
+    display: block;  
+}
+nav ul li ul{
+    display: none;
+    position: absolute;
+    background-color:rgb(143, 241, 195);   
+}
+nav ul li:hover ul {
+    display: block;
+    z-index: 1;
+}
+nav ul li ul li {
+    white-space: nowrap;
+    font-size: 1em;
+}
+a {
+    text-decoration: none;
+    color: black;
     }
-    ul{
-        text-align: center;  
-    }
-    nav li{
-        font-size: 2vh;
-        margin: 0 1.8vw 0 0; 
-        display: inline-block;
-        
-    }
-  
-    nav li img {
-        height: 1.7vh;
-        width: auto;}
-    nav ul li{
-        position: relative;
-       
-    }
-    nav ul li a {
-        display: block;  
-    }
-   
-    nav ul li ul{
-        display: none;
-        position: absolute;
-        background-color:rgb(143, 241, 195);
-        
-       
-    }
-
-    nav ul li:hover ul {
-        display: block;
-        z-index: 1;
-    }
-    nav ul li ul li {
-        white-space: nowrap;}
-    a {
-        text-decoration: none;
-        color: black;
-    }
-nav a:hover, .links a:hover {    
+nav a:hover, footer div a:hover {    
  text-decoration: underline;
  background-color: white;
  color: black;
     }
-
+.icons a {
+    color: white;
+    font-size: 2.5vw;
+}
+form input{
+    height: 3vw;
+    width: 100%;
+  }
+  form textarea{
+    height: 5vw;
+    width: 100%;
+  }
+  label {
+    font-size: 70%;
+    float: left;
+  }
+.kontakt-button {
+    font-size: 2vw;
+    font-weight: bold;
+    padding: 1vw 2vw;
+   
+    
+}   
+.kontakt-button:hover{
+    background-color:rgb(147, 241, 147);
+}
+    
 .icons a:hover {
  transform: scale(125%);}
+
 .backgroundblue {
     background-color:rgb(105, 202, 226);
 }
@@ -71,59 +86,75 @@ nav a:hover, .links a:hover {
    background-image: url("Titelbild.jpg");
    background-size: cover;
    background-position: top;
-   padding: 170px;}    
-.textposition {
-  text-align: left;
-  margin-left: -15%;
-  margin-top: -17%;}
-   
-    .Button {
-    font-size: 30px;
+   padding: 4vw;
+    padding-left: 6vw;}    
+
+ button {
+    font-size: 1.8vw;
     font-weight: bold;
-    padding: 2% 7%;
-    cursor: pointer;
+    padding: 2% 5%;
     border-radius: 1em;
-    margin-left: 30px;
     border-color: green;
     }
     .newsbutton {
-        font-size: 2.5vw;
-        -webkit-text-stroke: 0.6px rgb(189, 189, 189);
-        font-weight: bold;
-        width: 39vw ;
-        height: 20vw;;
-        cursor: pointer;
-        background-color: #e09c9c;
+        font-size: 2.3vw;
+        width:39vw;
+        height: 20vw;
         color: white;
         border-color:  white;
+        opacity: 0.85;
     }
-
+.newsbutton:hover {
+    opacity: 1;
+}
     
-    .button:hover {
+    button:hover {
     background-color: rgb(63, 236, 63) }
-
-    .containerdrei {
-        display: flex;
-        width: 30%;
-        text-align: center; 
-    }
- 
-    .zweiercontainer {
-        display: flex;
-        width: 45%;
-        justify-content: space-between;
-        align-items: center;        
-    }
-    .backgroundcontainer {
-        display: flex;
+textarea, input {
+    font-size: 0.5em;
+}
+.containerdrei {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1vw;
     
-        justify-content: center;
-        align-items: center;        
+    
+}
+
+    .container{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;  
     }
-    .bild1, .bild2 {
-        padding: 5%; 
-        background-color: rgb(223, 200, 185);
+    .container-zweielemente{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1.5vw;
+        align-items: center;
     }
+    .container:first-child{
+        margin-right: 1vw;
+    }
+    .container-zweielemente-hintergrund{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1.5vw;
+        background-color: rgb(223, 200, 185);  
+        padding: 3%;
+        text-align: center;
+    }
+    .containerteil {
+        display: block;
+        line-height: 3vw;
+        
+      }
+      
+      .containerteil a:not(:first-child) {
+        text-decoration: underline;
+      }
+      
+
+
 
 .background {
     background-color: #FFDDDD;
@@ -136,41 +167,94 @@ nav a:hover, .links a:hover {
    
 }
 
-.bildundtext {
+
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+      transform: translateY(100px);
+    }
+    100% {
+        
+      transform: translateY(0);
+    }
+  }
+  
+  .bildundtexta {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+  }
+  
+  .bildundtexta img {
+    animation: slideIn 0.5s ease-in-out;
+    animation-fill-mode: both;
+    animation-delay: 0s;
+  }
+  
+  .bildundtexta img:nth-child(2) {
+    animation-delay: 0.3s; 
+  }
+  
+  .bildundtexta img:nth-child(3) {
+    animation-delay: 0.7s; 
+  }
+  .bildundtexta img:nth-child(4) {
+    animation-delay: 1s; 
+  }
+
+  
+
+.texto{
+    flex: 0.7;
+    margin: 0 1% 0 1%;
+
+    
 }
 .bildlinks {
     width: 60%;
     margin-right: 0.8vw;
 
 }
+.bildlinks {
+    width: 70%;
+    margin-right: 5%;
+}
+.bilddrei{
+    
+    height: 20vw;
+    width: auto;
+  
+}
 .bildrechts {
     width: 60%;
     margin-left: 0.8vw;
 
 }
-
-
+footer div {
+   
+    display: block;
+    margin: 3% 0 0 2%;
+}
+footer a {
+    color: white;
+}
+footer img {
+    height: 12vw;
+   }
 footer {
     background-color:rgb(78, 40, 40);
     display: flex;
     justify-content: space-between;
+    
 }
-    .links a {
-        color: white;
-        font-size: 130%;
-    }
-    .links {
-        margin: 3% 0 0 2%;
-    }
-
-   footer a {
-    width: 40%;
-   }
 
 
+
+  
+  .einführungsbild {
+    height: 40vw; 
+    object-fit: cover;
+}
 .icons {
     display:flex;
     justify-content: space-between;
@@ -179,17 +263,9 @@ footer {
    
 } 
 .icons img {
-    width: 25vw;
+    width: 20vw;
 }
 
-.unsereprojekte {
-    background-color: rgb(105, 202, 226);
-}
-
-.icons a {
-    color: white;
-    font-size: 2.5vw;
-}
 
 
 #slider {
@@ -202,7 +278,7 @@ footer {
     width: 700%;
     margin: 0;
     left: 0;
-    animation: slider 50s infinite;
+    animation: slider 4s infinite;
   }
   
   
@@ -211,7 +287,11 @@ footer {
     width: 14.2857%;
     float: left;
   }
-  
+figure img {
+     
+    height: 45vw; 
+    object-fit: cover;
+  }
   #slider-nav {
     position: absolute;
     top: 50%;
@@ -242,88 +322,79 @@ footer {
     background-color: darkgray;
   }
 
+.rechteck {
+    width: 24vw;
+    height: 20vw;
+    background-color:rgb(147, 241, 147);
+   margin: 3%;
+}  
 
-@media only screen and (min-width:997px) {
+
 
 .titelcontainer {
     display: flex;
     justify-content: space-between;
-    align-items: center;        
+    align-items: center; 
+
+
 }
-nav li{
-    font-size: 4vh;
-    margin: 0 0.8vw 0 0; 
-    
-}
-
-nav li img {
-    height: 4vh;
-    width: auto;}
-
-body{
-    font-size: 2vw;}
-
-    .bild-sonderfall {
-            width: 50%;
-            margin-right: 5%;
-           
-        }
-    .textbild {
-     display: flex;
-    justify-content: space-between; 
+.titelcontainer h3 {
     align-items: center;
+    float: left;
+    font-size: 130%;
+}
+
+nav li{
+    font-size: 1.3em;
+    margin: 0 1.3vw 0 0; 
+    display: inline-block;
+  
+}
+nav li img {
+    height: 1em;
+    width: auto;
+    align-items: center;}
+
+
+
+.siebzigprozentgröße {
+    width: 70%;}
+    
+
+/*Animation Text */
+.animated-text {
+    animation: appear 2s linear forwards;
+  }
+  @keyframes appear {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+@media only screen and (min-width: 1010px) {
+
+    nav li img {
+        height: 3.4vh;}
+        
+    nav li , footer a{
+        font-size: 4vh;
+        
+    }
+   
+   
+
+.bild-sonderfall {
+    width: 50%;
+    margin-right: 5%;
+   
+}
+
+          nav ul li ul li {
+            font-size: 4vh}  
+            
            }
 
-.bildlinks {
-    width: 70%;
-    margin-right: 5%;
-}
-  
-.icons img {
-    width: 20vw;
-}      
-
-  
-
-
-.Spenden {
-    padding: 250px;
-    
-}    
-
-
-.PositionSpende {
-margin-left: -180px;
-
-}
-
-
-
-  
-    nav li {
-     
-        margin: 0 1.8vw 0 0;}
-     
-     
-        
-    }
-  
-
-
-@media only screen and (min-width: 1110px) {
+@media only screen and (min-width: 1310px) {
     body { 
-        margin-left: 10%;
-        margin-right: 10%;      
-    }
-    nav li img {
-        height: 3.4vh;
-        width: auto;
-    }
-    nav li{
-        font-size: 4vh;
-        margin: 0 1.8vw 0 0; 
-        
-    }
-
-
-}
+    margin-left: 10%;
+    margin-right: 10%;   
+                
+            }}

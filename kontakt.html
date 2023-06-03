@@ -1,55 +1,35 @@
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-GE34BCJEDH');
-</script> 
-
-
-<head>
-    <link href="style.css" rel="stylesheet">
-    <link rel="icon" type="image/png" href="Icon.jpg">      
+ 
     <title>Kontakt</title>
 
 </head><body>
   
-       
-  
-  <nav>
-    <ul>
-      <li><a href="index.html"> Start </a></li>
-      <li><a href="projekte.html"> Projekte </a>
-        <ul> <li><a href="Solarprojekt.html"> Solarprojekt </a></li> 
-        <li><a href="kunstprojekt.html"> Kunstprojekt </a></li>  </ul></li> 
-      <li><a href="aktuelles.html"> Aktuelles </a>
-        <ul> <li><a href="kabelsammlung.html"> Kabelsammlung </a></li>
-        <li><a href="kunstausstellung.html"> Kunstausstellung </a></li>
-        <li><a href="kompakt.html"> Infos kompakt</a></li></ul> </li>
-      <li><a href="Partnerschaft.html">Partnerschaft </a></li> 
-      <li><a href="econtact.html"> <img class="englisch" src="englisch.png"></a></li>
-    </ul>
-  </nav>
- 
-<h2> Kontakt </h2>
-<h2> Noch nicht funktionsfähig! Noch im Aufbau!</h2>
+  <div id="navigation"></div>
+  <script src="navifooter.js"></script>
+    
+   
+   
 
-<form id="contact-form">
-  <label for="name">Name:</label>
-  <input type="text" id="name" required>
-  
-  <label for="email">E-Mail:</label>
-  <input type="email" id="email" required>
-  
-  <label for="message">Nachricht:</label>
-  <textarea id="message" required></textarea>
-  
-  <button type="submit">Absenden</button>
+<h2> Kontakt </h2>
+
+<form
+  action="https://formspree.io/f/xlekydbr"
+  method="POST">
+
+  <label>E-Mailadresse: </label>
+  <input type="email" name="email" placeholder="deine E-Mailadresse" required>
+<br>
+<br>
+  <label> Name: </label>
+  <input type="text" name="name" placeholder="dein Name (optional)">
+<br>
+<br>
+<label>Nachricht: </label>
+<textarea name="message" placeholder="deine Nachricht..." ></textarea>
+<br> 
+<br>
+  <button type="submit" class="kontakt-button" style="border-radius: 0;">Senden</button>
 </form>
 
-<br>
-<footer > 
-  <div class="links"> <a  href="kontakt.html"> Kontakt </a> <br>
-  <a  href="Impressum.html">Impressum</a></div>
-  <a href="index.html"> <img src="LogoRathenau.jpg">
-    </footer>
+
+<div id="footer"></div>
+
